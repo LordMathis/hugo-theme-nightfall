@@ -1,17 +1,9 @@
 <div class="socialNavbar">
     <ul>
-        {{- range $name, $path := .Site.Params.social }}
-        {{- if $path }}
+        {{ range sort .Site.Params.social "key"}}
         <li>
-            <a href="{{ $path | safeURL }}">{{ $name }}</a>
+            <a href="{{ .url | safeURL }}">{{ .name }}</a>
         </li>
-        {{- end }}
-        {{- end }}
-        <li>
-            <a href="mailto:{{ .Site.Params.email }}">
-                e-mail
-            </a>
-        </li>
-
+        {{ end }}
     </ul>
 </div>
