@@ -1,10 +1,35 @@
-{{ define "main" }}
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
 
-<div class="indexWrapper">
-    <div>
-        <h1 class="indexHeader">{{ .Site.Params.author }}</h1>
+<head>
+    <title>
+        Home | {{ .Site.Params.author }}
+    </title>
+
+    {{ partial "head.html" . }}
+
+</head>
+
+<body>
+
+    <div class="flexWrapper">
+        {{ partial "header.html" . }}
+
+        <div class="content vertical">
+            <main class="main">
+                <div class="indexWrapper">
+                    <div>
+                        <h1 class="indexHeader">{{ .Site.Params.author }}</h1>
+                    </div>
+                    {{ partial "social.html" . }}
+                </div>
+            </main>
+        </div>
+
+
+        {{ partial "footer.html" . }}
     </div>
-    {{ partial "social.html" . }}
-</div>
 
-{{ end }}
+</body>
+
+</html>
