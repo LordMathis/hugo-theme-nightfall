@@ -10,6 +10,10 @@ body {
   min-height: 100vh;
 }
 
+a {
+  color: $blue;
+}
+
 @for $i from 1 through 6 {
   h#{$i} {
     font-family: $fontHeader;
