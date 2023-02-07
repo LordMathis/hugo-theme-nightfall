@@ -1,6 +1,6 @@
 <div class="socialNavbar">
     <ul>
-        {{- range $name, $path := .Site.Params.Social }}
+        {{- range $name, $path := .Site.Params.social }}
         {{- if $path }}
         <li>
             <a href="{{ $path | safeURL }}">{{ $name }}</a>
