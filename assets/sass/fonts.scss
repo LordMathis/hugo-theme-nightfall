@@ -1,0 +1,21 @@
+@font-face{
+    font-family: "Fira Mono";
+    src: url("../fonts/FiraMono/FiraMono-Medium.eot");
+    src: local("Fira Mono"),
+         url("../fonts/FiraMono/FiraMono-Medium.eot") format("embedded-opentype"),
+         url("../fonts/FiraMono/FiraMono-Medium.woff") format("woff"),
+         url("../fonts/FiraMono/FiraMono-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans/OpenSans-Regular.eot");
+    src: url("../fonts/OpenSans/OpenSans-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/OpenSans/OpenSans-Regular.woff") format("woff"),
+    url("../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype"),
+    url("../fonts/OpenSans/OpenSans-Regular.svg#OpenSansRegular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}

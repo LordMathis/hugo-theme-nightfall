@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+<div>
+    <div class="blogHeader">
+        <h1>Blog</h1>
+    </div>
+    <div>
+        {{ range .Pages }}
+
+        <a href="{{ .Permalink }}">
+            <div class="postListItem" role="listitem">
+                <div class="postHeader">
+                    <span class="postTitle">{{ .Title }}</span>
+                    <span class="postDate">{{ .Date.Format "January 2, 2006" }}</span>
+                </div>
+                <div class="postExcerpt">
+                    <p>{{ .Summary }}</p>
+                </div>
+            </div>
+        </a>
+
+
+        {{end}}
+    </div>
+</div>
+
+{{ end }}

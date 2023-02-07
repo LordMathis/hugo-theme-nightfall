@@ -1,0 +1,17 @@
+<div class="socialNavbar">
+    <ul>
+        {{- range $name, $path := .Site.Params.Social }}
+        {{- if $path }}
+        <li>
+            <a href="{{ $path | safeURL }}">{{ $name }}</a>
+        </li>
+        {{- end }}
+        {{- end }}
+        <li>
+            <a href="mailto:{{ .Site.Params.email }}">
+                e-mail
+            </a>
+        </li>
+
+    </ul>
+</div>

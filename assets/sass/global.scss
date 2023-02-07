@@ -1,0 +1,25 @@
+@import "./variables.scss";
+
+body, html {
+    height: 100%;
+}
+
+body {
+  font-family: $fontParagraph;
+  color: $white;
+  background-color: $backgroundDark;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-family: $fontHeader;
+  }
+}
+
+@-ms-viewport{
+  width: device-width;
+}

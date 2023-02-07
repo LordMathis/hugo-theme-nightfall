@@ -1,0 +1,42 @@
+@import "./variables.scss";
+
+.header {
+  font-family: $fontHeader;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  @media only screen and (min-width: $breakLarge) {
+    width: $width;
+  }
+}
+
+.headerWrapper {
+  overflow: auto;
+  box-sizing: border-box;
+  background-color: $backgroundDarker;
+  display: flex;
+  justify-content: center;
+}
+
+.headerLinks {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      display: inline;
+      margin: 5px;
+      a {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.terminal {
+  color: $white;
+  text-decoration: none;
+}

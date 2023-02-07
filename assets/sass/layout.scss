@@ -1,0 +1,31 @@
+@import "./variables.scss";
+
+.content {
+  text-align: center;
+  margin: 0 auto;
+  flex: 1 auto;
+  padding: 20px;
+
+  @media only screen and (min-width: $breakLarge) {
+    display: flex;
+    width: $width;
+  }
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flexWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+}
