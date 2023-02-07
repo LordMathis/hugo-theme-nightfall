@@ -1,5 +1,10 @@
 # Dusk
 
+**WIP** 
+- configurable menu
+- example site
+- screenshot
+
 Dusk is a minimal dark theme for Hugo
 
 ## Get the theme
