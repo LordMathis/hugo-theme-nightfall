@@ -7,16 +7,13 @@
         </div>
         <nav class="headerLinks">
             <ul>
-                <li key="about">
-                    <a href="/about">
-                        <span>~/about</span>
+                {{ range .Site.Menus.header }}
+                <li>
+                    <a href="{{ .URL | absURL }}" title="{{ .Title }}" >
+                        ~/{{- .Name -}}
                     </a>
                 </li>
-                <li key="blog">
-                    <a href="/blog">
-                        <span>~/blog</span>
-                    </a>
-                </li>
+                {{ end }}
             </ul>
         </nav>
     </div>

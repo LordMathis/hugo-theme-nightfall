@@ -1,12 +1,12 @@
 {{ define "title"}}
-Blog | {{ .Site.Params.author }}
+{{ .Title }} | {{ .Site.Params.author }}
 {{ end }}
 
 {{ define "main" }}
 
 <div>
     <div class="blogHeader">
-        <h1>Blog</h1>
+        <h1>{{ .Title }}</h1>
     </div>
     <div>
         {{ range .Pages }}

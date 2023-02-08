@@ -2,8 +2,18 @@ baseURL = 'http://gohugo.io/'
 languageCode = 'en-us'
 theme = "hugo-theme-dusk"
 
+[menu]
+  [[menu.header]]
+    name = "blog"
+    weight = 0
+    url = "blog"
+  [[menu.header]]
+    name = "about"
+    weight = 1
+    url = "about"
+
 [params]
-author = "Mr Hugo"
+author = "Hugo Dusk"
 user = "hello"
 hostname = "gohugo.io"
 
