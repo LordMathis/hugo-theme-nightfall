@@ -1,6 +1,6 @@
 baseURL = 'http://gohugo.io/'
 languageCode = 'en-us'
-theme = "hugo-theme-dusk"
+theme = "hugo-theme-nightfall"
 
 [menu]
   [[menu.header]]
@@ -13,7 +13,7 @@ theme = "hugo-theme-dusk"
     url = "about"
 
 [params]
-author = "Hugo Dusk"
+author = "Hugo Nightfall"
 user = "hello"
 hostname = "gohugo.io"
 

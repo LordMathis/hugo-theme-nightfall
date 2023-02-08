@@ -1,15 +1,10 @@
-# Dusk
+# Nightfall
 
-**WIP** 
-- configurable menu
-- example site
-- screenshot
-
-Dusk is a minimal dark theme for Hugo
+Nightfall is a minimal dark theme for Hugo
 
 ## Get the theme
 
-`git clone https://github.com/LordMathis/hugo-theme-dusk themes/dusk`
+`git clone https://github.com/LordMathis/hugo-theme-nightfall themes/nightfall`
 
 ## Configure the theme
 
