@@ -33,7 +33,6 @@ key = 1
 name = "twitter"
 url = "https://www.example.com"
 
-
 [[params.social]]
 key = 2
 name = "linkedin"
