@@ -2,6 +2,9 @@
 
 Nightfall is a minimal dark theme for Hugo
 
+![Hugo Theme Nightfall](https://raw.githubusercontent.com/LordMathis/hugo-theme-nightfall/main/images/screenshot.png)
+![Hugo Theme Nightfall Posts](https://raw.githubusercontent.com/LordMathis/hugo-theme-nightfall/main/images/screenshot_2.png)
+
 ## Get the theme
 
 `git clone https://github.com/LordMathis/hugo-theme-nightfall themes/nightfall`
@@ -41,7 +44,4 @@ key = 3
 name = "email"
 url = "mailto:email@example.com"
 ```
-
-## Add content
-
-Add your blog posts to `content/blog`. Add info about you to `about.md` in `content`
+For full example chech `exampleSite/config.toml`
