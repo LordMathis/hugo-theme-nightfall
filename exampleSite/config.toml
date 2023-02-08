@@ -1,0 +1,28 @@
+baseURL = 'http://gohugo.io/'
+languageCode = 'en-us'
+theme = "hugo-theme-dusk"
+
+[params]
+author = "Mr Hugo"
+user = "hello"
+hostname = "gohugo.io"
+
+[[params.social]]
+key = 0
+name = "github"
+url = "https://github.com/gohugoio"
+
+[[params.social]]
+key = 1
+name = "twitter"
+url = "https://www.example.com"
+
+[[params.social]]
+key = 2
+name = "linkedin"
+url = "https://www.example.com"
+
+[[params.social]]
+key = 3
+name = "email"
+url = "mailto:email@example.com"
