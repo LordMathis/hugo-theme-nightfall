@@ -1,12 +1,18 @@
-@import "./blog-post.scss";
-@import "./blog.scss";
-@import "./footer.scss";
-@import "./global.scss";
-@import "./header.scss";
-@import "./index.scss";
-@import "./layout.scss";
-@import "./page.scss";
-@import "./post-link.scss";
-@import "./social.scss";
-@import "./variables.scss";
-@import "./fonts.scss";
+@import "./global";
+
+// utils
+@import "./utils/variables";
+@import "./utils/fonts";
+
+// pages
+@import "./pages/blog-post";
+@import "./pages/blog";
+@import "./pages/index";
+@import "./pages/layout";
+@import "./pages/page";
+
+// components
+@import "./components/footer";
+@import "./components/header";
+@import "./components/post-link";
+@import "./components/social";
