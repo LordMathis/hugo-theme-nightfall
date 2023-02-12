@@ -4,15 +4,14 @@
 @import "./utils/variables";
 @import "./utils/fonts";
 
-// pages
-@import "./pages/blog-post";
-@import "./pages/blog";
-@import "./pages/index";
-@import "./pages/layout";
-@import "./pages/page";
-
 // components
 @import "./components/footer";
 @import "./components/header";
-@import "./components/post-link";
+@import "./components/post";
 @import "./components/social";
+
+// pages
+@import "./pages/single";
+@import "./pages/list";
+@import "./pages/index";
+@import "./pages/baseof";
