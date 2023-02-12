@@ -14,12 +14,16 @@ a {
   color: $blue;
 }
 
-code {
+pre code {
   font-family: $fontCode;
   display: block;
   background: $backgroundDarker;
   padding: 10px;
   overflow: auto;
+}
+
+code {
+  font-family: $fontCode;
 }
 
 @for $i from 1 through 6 {
