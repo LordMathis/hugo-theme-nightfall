@@ -15,6 +15,7 @@
         {{ range .Pages }}
 
         <a href="{{ .Permalink }}">
+            <!-- [html-validate-disable-next prefer-native-element] -->
             <div class="postListItem" role="listitem">
                 <div class="postHeader">
                     <span class="postTitle">{{ .Title }}</span>
