@@ -16,6 +16,10 @@ a {
 
 code {
   font-family: $fontCode;
+  display: block;
+  background: $backgroundDarker;
+  padding: 10px;
+  overflow: auto;
 }
 
 @for $i from 1 through 6 {
