@@ -8,9 +8,13 @@
     <div class="listHeader">
         <h1>{{ .Title }}</h1>
     </div>
+
+    {{ with .Content }}
     <div class="listContent">
-    {{ .Content }}
+        {{- . -}}
     </div>
+    {{ end }}
+
     <div>
         {{ range .Pages }}
 
