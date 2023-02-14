@@ -7,9 +7,22 @@ Nightfall is a minimal dark theme for Hugo
 
 ## Get the theme
 
-`git clone https://github.com/LordMathis/hugo-theme-nightfall themes/nightfall`
+Import as [hugo module](https://gohugo.io/hugo-modules/use-modules/#use-a-module-for-a-theme) in `config.toml`:
+```toml
+[module]
+[[module.imports]]
+  path = 'github.com/LordMathis/hugo-theme-nightfall'
+```
 
-## Configure the theme
+OR
+
+Import manually:
+1. `git clone https://github.com/LordMathis/hugo-theme-nightfall themes/nightfall`
+2. Add `theme = "nightfall"` in your `config.toml`:
+
+## Configuration
+
+For full example chech `exampleSite/config.toml`
 
 Add these params to you `config.toml`
 
@@ -43,4 +56,13 @@ key = 3
 name = "email"
 url = "mailto:email@example.com"
 ```
-For full example chech `exampleSite/config.toml`
+
+To add a menu item add `[[menu.header]]` item to `config.toml`. For example:
+
+```toml
+[menu]
+  [[menu.header]]
+    name = "posts"
+    weight = 0
+    url = "/posts"
+```
