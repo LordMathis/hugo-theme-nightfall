@@ -2,14 +2,12 @@
 
 .header {
   font-family: $fontHeader;
-  padding: 20px;
+  padding: 0 20px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-  @media only screen and (min-width: $breakLarge) {
-    width: $width;
-  }
+  width: $width;
 }
 
 .headerWrapper {
@@ -40,4 +38,82 @@
 .terminal {
   color: $white;
   text-decoration: none;
+}
+
+.hamb {
+  cursor: pointer;
+  float: right;
+  display: none;
+}
+
+.hamb-line {
+  background: $white;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+} /* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after {
+  background: $white;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+.hamb-line::before {
+  top: 5px;
+}
+.hamb-line::after {
+  top: -5px;
+}
+
+.side-menu {
+  display: none;
+}
+
+.side-menu:checked ~ .headerLinks {
+  max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+  background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .headerLinks {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    background-color: $backgroundDark;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .hamb {
+    display: block;
+  }
 }
