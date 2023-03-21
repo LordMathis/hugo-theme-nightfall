@@ -2,7 +2,13 @@
     <ul>
         {{ range sort .Site.Params.social "key"}}
         <li>
-            <a href="{{ .url | safeURL }}">{{ .name }}</a>
+            {{ if isset . "icon" }}
+                <a href="{{ .url | safeURL }}" aria-hidden="true" title="{{ .name }}">
+                    <i class="{{ .icon }}"></i>
+                </a>
+            {{ else }}
+                <a href="{{ .url | safeURL }}">{{ .name }}</a>
+            {{ end }}
         </li>
         {{ end }}
     </ul>

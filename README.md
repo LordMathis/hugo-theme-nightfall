@@ -40,6 +40,7 @@ You can also add social links
 key = 0
 name = "github"
 url = "https://github.com/gohugoio"
+icon = "fa-brands fa-github"  # Add link to your icon font to `layouts/partials/custom-head.html`
 
 [[params.social]]
 key = 1
@@ -67,6 +68,9 @@ To add a menu item add `[[menu.header]]` item to `config.toml`. For example:
     url = "/posts"
 ```
 
+To use icons for social links, you also need to add the link to icon font to custom-head.html
+
+
 ## Custom Head
 
-To use custom icons, css, js or other resources create `layouts/partials/head-custom.html` and add your links there.
+To use custom icons, css, js or other resources create `layouts/partials/custom-head.html` and add your links there.
