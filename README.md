@@ -66,3 +66,7 @@ To add a menu item add `[[menu.header]]` item to `config.toml`. For example:
     weight = 0
     url = "/posts"
 ```
+
+## Custom Head
+
+To use custom icons, css, js or other resources create `layouts/partials/head-custom.html` and add your links there.
