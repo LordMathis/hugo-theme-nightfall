@@ -3,3 +3,31 @@
 .postWrapper {
     text-align: left;
 }
+
+.postMetadata {
+    font-family: $fontCode;
+    display: block;
+    background: $backgroundDarker;
+    padding: 10px;
+}
+
+dt, dd {
+    line-height: 1.5;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: max-content auto;
+}
+
+dt {
+    grid-column-start: 1;
+}
+
+dd {
+    grid-column-start: 2;
+}
+
+dt::after {
+    content: ":";
+}
