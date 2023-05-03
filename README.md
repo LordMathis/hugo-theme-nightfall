@@ -4,6 +4,7 @@ Nightfall is a minimal dark theme for Hugo
 
 ![Hugo Theme Nightfall](https://raw.githubusercontent.com/LordMathis/hugo-theme-nightfall/main/images/screenshot.png)
 ![Hugo Theme Nightfall Posts](https://raw.githubusercontent.com/LordMathis/hugo-theme-nightfall/main/images/screenshot_2.png)
+![Hugo Theme Nightfall Single](https://raw.githubusercontent.com/LordMathis/hugo-theme-nightfall/main/images/screenshot_3.png)
 
 ## Get the theme
 
@@ -69,7 +70,6 @@ To add a menu item add `[[menu.header]]` item to `config.toml`. For example:
 ```
 
 To use icons for social links, you also need to add the link to icon font to custom-head.html
-
 
 ## Custom Head
 

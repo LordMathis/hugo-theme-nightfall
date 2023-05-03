@@ -23,7 +23,8 @@
             <div class="postListItem" role="listitem">
                 <div class="postHeader">
                     <span class="postTitle">{{ .Title }}</span>
-                    <span class="postDate">{{ .Date.Format "January 2, 2006" }}</span>
+                    {{ $formattedDate := .Date.Format "2006-01-02" }}
+                    <time class="postDate" datetime="{{ $formattedDate }}">{{ .Date.Format "January 2, 2006" }}</time>
                 </div>
                 <div class="postExcerpt">
                     <p>{{ .Summary }}</p>
