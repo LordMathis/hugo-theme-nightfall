@@ -21,7 +21,9 @@
                     <div>
                         <h1 class="indexHeader">{{ .Site.Params.author }}</h1>
                     </div>
-                    {{ partial "social.html" . }}
+                    {{ if isset .Site.Params "social" }}
+                        {{ partial "social.html" . }}
+                    {{ end }}
                 </div>
             </main>
         </div>
