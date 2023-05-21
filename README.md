@@ -74,3 +74,12 @@ To use icons for social links, you also need to add the link to icon font to cus
 ## Custom Head
 
 To use custom icons, css, js or other resources create `layouts/partials/custom-head.html` and add your links there.
+
+## Custom footer
+
+You can customize the text displayed in footer with `footerHtml` in `[[params]]` section. The value will be rendered inside `<span>` tag. For example:
+
+```toml
+[params]
+footerHtml = 'CC-0, Built with <a href="https://gohugo.io" class="footerLink">Hugo</a> and <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme'
+```
