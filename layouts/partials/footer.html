@@ -1,5 +1,11 @@
 <footer class="footer">
-    © {{ now.Format "2006" }} {{ .Site.Params.author }}, Built with
-    <a href="https://gohugo.io" class="footerLink">Hugo</a> and
-    <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme
+    {{ with .Site.Params.footerHtml }}
+        <span>{{ . | safeHTML }}</span>
+    {{ else }}
+        <span>
+            © {{ now.Format "2006" }} {{ .Site.Params.author }}, Built with
+            <a href="https://gohugo.io" class="footerLink">Hugo</a> and
+            <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme
+        </span>
+    {{ end }}
 </footer>
