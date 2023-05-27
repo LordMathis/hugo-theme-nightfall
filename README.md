@@ -34,7 +34,9 @@ user = "hello"
 hostname = "gohugo.io"
 ```
 
-You can also add social links
+### Social links
+
+You can also add social links. To use icons for social links, you also need to add the link to icon font to custom-head.html
 
 ```toml
 [[params.social]]
@@ -59,6 +61,21 @@ name = "email"
 url = "mailto:email@example.com"
 ```
 
+### Post metadata
+
+Post metadata such as tags, published date and reading time are rendered on post pages. You can turn off showing published date and reading time globally in `[params]` section of your config
+
+```toml
+[params]
+published = false
+readingTime = false
+```
+
+You can also disable metadata on a specific page by adding `showMetadata = false` to front matter.
+
+
+### Menu
+
 To add a menu item add `[[menu.header]]` item to `config.toml`. For example:
 
 ```toml
@@ -69,13 +86,11 @@ To add a menu item add `[[menu.header]]` item to `config.toml`. For example:
     url = "/posts"
 ```
 
-To use icons for social links, you also need to add the link to icon font to custom-head.html
-
-## Custom Head
+### Custom Head
 
 To use custom icons, css, js or other resources create `layouts/partials/custom-head.html` and add your links there.
 
-## Custom footer
+### Custom footer
 
 You can customize the text displayed in footer with `footerHtml` in `[[params]]` section. The value will be rendered inside `<span>` tag. For example:
 
