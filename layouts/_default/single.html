@@ -2,7 +2,6 @@
 {{ .Title }} | {{ .Site.Params.author }}
 {{ end }}
 
-
 {{ define "main" }}
 <div class="postWrapper">
     <h1>{{ .Title }}</h1>
@@ -19,13 +18,13 @@
                 {{ partial "taxonomy/categories.html" . }}
             {{ end }}
             {{ if .Site.Params.published | default true }}
-                <dt>published</dt>
+                <dt>{{ i18n "published" }}</dt>
                 {{ $formattedDate := .Date.Format "2006-01-02" }}
-                <dd><time datetime="{{ $formattedDate }}">{{ .Date.Format "January 2, 2006" }}</time></dd>
+                <dd><time datetime="{{ $formattedDate }}">{{ .Date | time.Format ":date_long" }}</time></dd>
             {{ end }}
             {{ if .Site.Params.readingTime | default true }}
-                <dt>reading time</dt>
-                <dd>{{ math.Round (div (countwords .Content) 220.0) }} minutes</dd>
+                <dt>{{ i18n "reading_time" }}</dt>
+                <dd>{{ i18n "reading_time_desc" .ReadingTime }}</dd>
             {{ end }}
         </dl>
     </section>
