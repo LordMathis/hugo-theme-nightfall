@@ -54,7 +54,7 @@ url = "https://www.example.com"
 key = 2
 name = "mastodon"
 url = "https://www.example.com"
-rel = me  # You can also add rel to social link
+rel = "me"  # You can also add rel to social link
 
 [[params.social]]
 key = 3
