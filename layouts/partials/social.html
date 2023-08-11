@@ -7,7 +7,7 @@
                     <i class="{{ .icon }}"></i>
                 </a>
             {{ else }}
-                <a href="{{ .url | safeURL }}" {{ if .rel }} rel="{{ .rel }}"{{ end }}></a>>{{ .name }}</a>
+                <a href="{{ .url | safeURL }}" {{ if .rel }} rel="{{ .rel }}"{{ end }}>{{ .name }}</a>
             {{ end }}
         </li>
         {{ end }}
