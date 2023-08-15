@@ -5,7 +5,7 @@
 {{ define "main" }}
 <div class="postWrapper">
     <h1>{{ .Title }}</h1>
-    {{ if .Params.showMetadata | default true }}
+    {{ if .Site.Params.showMetadata | default true }}
     <section class="postMetadata">
         <dl>
             {{ with .GetTerms "tags" }}
