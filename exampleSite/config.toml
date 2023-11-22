@@ -13,9 +13,12 @@ theme = "hugo-theme-nightfall"
     url = "about"
 
 [params]
-author = "Hugo Nightfall"
 user = "hello"
 hostname = "gohugo.io"
+  [params.author]
+    name = "Hugo Nightfall"  # Website and RSS feed author
+    email = "email@example.com"  # RSS feed email address
+
 
 readingTime = true  # Show reading time on post page
 published = true  # Show published data on post page

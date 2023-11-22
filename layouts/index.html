@@ -3,7 +3,7 @@
 
 <head>
     <title>
-        {{ i18n "home" }} | {{ .Site.Params.author }}
+        {{ i18n "home" }} | {{ .Site.Params.author.name }}
     </title>
 
     {{ partial "head.html" . }}
@@ -19,7 +19,7 @@
             <main class="main">
                 <div class="indexWrapper">
                     <div>
-                        <h1 class="indexHeader">{{ .Site.Params.author }}</h1>
+                        <h1 class="indexHeader">{{ .Site.Params.author.name }}</h1>
                     </div>
                     {{ if isset .Site.Params "social" }}
                         {{ partial "social.html" . }}

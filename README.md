@@ -29,9 +29,12 @@ Add these params to you `config.toml`
 
 ```toml
 [params]
-author = "Mr Hugo"
 user = "hello"
 hostname = "gohugo.io"
+
+  [params.author]
+    name = "Mr Hugo"
+    email = "hugo@example.com
 ```
 
 ### Social links
