@@ -27,9 +27,12 @@
 
 .main {
   height: 100%;
-  padding: 20px;
 
   @media only screen and (min-width: $breakLarge) {
     width: $width;
+  }
+
+  @media screen and (max-width: $breakLarge) {
+    width: 100%;    
   }
 }
