@@ -36,7 +36,6 @@ hostname = "gohugo.io"
     name = "Mr Hugo"
     email = "hugo@example.com
 ```
-
 ### Social links
 
 You can also add social links. To use icons for social links, you also need to add the link to icon font to custom-head.html
@@ -76,8 +75,23 @@ readingTime = false
 ```
 
 You can also disable metadata on a specific page by adding `showMetadata = false` to front matter.
+### Description
 
+To add a site wide description, add `sitedescription` to `config.toml`. For example:
+```toml
+[params]
+sitedescription = 'Your website description'
+```
 
+You can also add a description to individual posts in you website by adding `description` to the front matter. For example:
+```
++++
+title =  'This is the post title'
+draft = false
+date = 2024-01-23
+description = 'This is the description'
++++
+```
 ### Menu
 
 To add a menu item add `[[menu.header]]` item to `config.toml`. For example:
