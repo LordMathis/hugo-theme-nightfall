@@ -1,4 +1,4 @@
-@import "../utils/variables";
+@use "../utils/variables";
 
 .postWrapper {
     text-align: left;
@@ -6,9 +6,9 @@
 }
 
 .postMetadata {
-    font-family: $fontCode;
+    font-family: variables.$fontCode;
     display: block;
-    background: $backgroundDarker;
+    background: variables.$backgroundDarker;
     padding: 10px;
 }
 

@@ -1,4 +1,4 @@
-@import "../utils/variables";
+@use "../utils/variables";
 
 .content {
   text-align: center;
@@ -28,11 +28,11 @@
 .main {
   height: 100%;
 
-  @media only screen and (min-width: $breakLarge) {
-    width: $width;
+  @media only screen and (min-width: variables.$breakLarge) {
+    width: variables.$width;
   }
 
-  @media screen and (max-width: $breakLarge) {
+  @media screen and (max-width: variables.$breakLarge) {
     width: 100%;    
   }
 }
