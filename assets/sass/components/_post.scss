@@ -30,6 +30,10 @@
   margin-bottom: 20px;
 }
 
+.postListLink:hover {
+  text-decoration: none;
+}
+
 .postExcerpt {
   text-align: initial;
   text-decoration: none;
@@ -48,7 +52,10 @@
 a,
 a:link,
 a:visited,
-a:hover,
 a:active{
   text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
 }
