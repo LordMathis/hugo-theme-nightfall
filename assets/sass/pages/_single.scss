@@ -1,4 +1,4 @@
-@use "../utils/variables";
+@use "../utils/variables" as v;
 
 .postWrapper {
     text-align: left;
@@ -6,9 +6,9 @@
 }
 
 .postMetadata {
-    font-family: variables.$fontCode;
+    font-family: v.$fontCode;
     display: block;
-    background: variables.$backgroundDarker;
+    background: v.$backgroundDarker;
     padding: 10px;
 }
 

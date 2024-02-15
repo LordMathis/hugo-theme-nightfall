@@ -1,9 +1,9 @@
-@use "utils/variables";
+@use "utils/variables" as v;
 
 body {
-  font-family: variables.$fontParagraph;
-  color: variables.$white;
-  background-color: variables.$backgroundDark;
+  font-family: v.$fontParagraph;
+  color: v.$white;
+  background-color: v.$backgroundDark;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -11,26 +11,26 @@ body {
 }
 
 a {
-  @include variables.primary-color;
+  @include v.primary-color;
 }
 
 pre code {
-  font-family: variables.$fontCode;
+  font-family: v.$fontCode;
   font-size: 75%;
   display: block;
-  background: variables.$backgroundDarker;
+  background: v.$backgroundDarker;
   padding: 10px;
   overflow: auto;
 }
 
 code {
-  font-family: variables.$fontCode;
+  font-family: v.$fontCode;
   font-size: 75%;
 }
 
 @for $i from 1 through 6 {
   h#{$i} {
-    font-family: variables.$fontHeader;
+    font-family: v.$fontHeader;
   }
 }
 

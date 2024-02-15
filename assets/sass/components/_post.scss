@@ -1,17 +1,17 @@
-@use "../utils/variables";
+@use "../utils/variables" as v;
 
 .postDate {
   float: right;
-  color: variables.$white;
+  color: v.$white;
 }
 
 .postTitle {
   
-  @include variables.primary-color;
+  @include v.primary-color;
 
   text-decoration: none;
   text-transform: capitalize;
-  font-family: variables.$fontHeader;
+  font-family: v.$fontHeader;
   font-size: 1.2em;
   float: left;
 }
@@ -26,14 +26,14 @@
 
 .postListItem {
   padding: 20px;
-  background-color: variables.$black;
+  background-color: v.$black;
   margin-bottom: 20px;
 }
 
 .postExcerpt {
   text-align: initial;
   text-decoration: none;
-  color: variables.$white;
+  color: v.$white;
 }
 
 .headerContainer {
