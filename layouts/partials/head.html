@@ -11,13 +11,9 @@
   <link href="{{ .Permalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" >
 {{- end -}}
 
-
 {{ $vars := dict
   "color" (or site.Params.styles.color "blue")
 }}
-
-{{/*    "custom_color" (or site.Params.styles.custom_color false)
-  */}}
 
 {{ $options := dict
   "targetPath" "css/style.css"
