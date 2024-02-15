@@ -11,7 +11,7 @@ body {
 }
 
 a {
-  color: variables.$orange;
+  @include variables.primary-color;
 }
 
 pre code {

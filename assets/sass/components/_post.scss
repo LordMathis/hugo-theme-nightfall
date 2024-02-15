@@ -6,7 +6,9 @@
 }
 
 .postTitle {
-  color: variables.$orange;
+  
+  @include variables.primary-color;
+
   text-decoration: none;
   text-transform: capitalize;
   font-family: variables.$fontHeader;
