@@ -1,6 +1,6 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name = "description" content = "{{.Description | default .Site.Params.SiteDescription}}">
+<meta name="description" content="{{.Description | default .Site.Params.SiteDescription}}">
 
 {{ hugo.Generator }}
 
@@ -11,7 +11,21 @@
   <link href="{{ .Permalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" >
 {{- end -}}
 
-{{ $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint }}
+
+{{ $vars := dict
+  "color" (or site.Params.styles.color "blue")
+}}
+
+{{/*    "custom_color" (or site.Params.styles.custom_color false)
+  */}}
+
+{{ $options := dict
+  "targetPath" "css/style.css"
+  "transpiler" "dartsass"
+  "vars" $vars
+}}
+
+{{ $style := resources.Get "sass/main.scss" | toCSS $options | minify | fingerprint }}
 <link href="{{ $style.RelPermalink }}" rel="stylesheet">
 
 {{ partial "custom-head.html" . }}
