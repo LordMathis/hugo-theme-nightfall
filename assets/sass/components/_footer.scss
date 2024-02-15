@@ -1,11 +1,11 @@
-@import "../utils/variables";
+@use "../utils/variables" as v;
 
 .footer {
   padding: 15px;
   text-align: center;
-  background-color: $backgroundDarker;
+  background-color: v.$backgroundDarker;
 }
 
 .footerLink {
-  color: $white;
+  color: v.$white;
 }

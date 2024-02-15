@@ -8,6 +8,8 @@ Nightfall is a minimal dark theme for Hugo
 
 ## Get the theme
 
+Install [Hugo](https://gohugo.io/installation/) and **[dart-sass](https://gohugo.io/functions/resources/tocss/#dart-sass)**.
+
 Import as [hugo module](https://gohugo.io/hugo-modules/use-modules/#use-a-module-for-a-theme) in `config.toml`:
 ```toml
 [module]
@@ -64,6 +66,17 @@ name = "email"
 url = "mailto:email@example.com"
 ```
 
+### Color
+
+You can customize post title and link color
+
+```toml
+[[params.styles]]
+color = "orange"
+```
+
+Specify your own color with hex value or use one of the predefined colors (blue, orange, green or red). The default color is blue. Best contrast is provided by orange.
+
 ### Post metadata
 
 Post metadata such as tags, published date and reading time are rendered on post pages. You can turn off showing published date and reading time globally in `[params]` section of your config
@@ -75,6 +88,7 @@ readingTime = false
 ```
 
 You can also disable metadata on a specific page by adding `showMetadata = false` to front matter.
+
 ### Description
 
 To add a site wide description, add `sitedescription` to `config.toml`. For example:
@@ -110,7 +124,7 @@ To use custom icons, css, js or other resources create `layouts/partials/custom-
 
 ### Custom footer
 
-You can customize the text displayed in footer with `footerHtml` in `[[params]]` section. The value will be rendered inside `<span>` tag. For example:
+You can customize the text displayed in footer with `footerHtml` in `[params]` section. The value will be rendered inside `<span>` tag. For example:
 
 ```toml
 [params]

@@ -1,19 +1,19 @@
-@import "../utils/variables";
+@use "../utils/variables" as v;
 
 .header {
-  font-family: $fontHeader;
+  font-family: v.$fontHeader;
   padding: 0 20px;
   height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: $width;
+  width: v.$width;
 }
 
 .headerWrapper {
   overflow: auto;
   box-sizing: border-box;
-  background-color: $backgroundDarker;
+  background-color: v.$backgroundDarker;
   display: flex;
   justify-content: center;
   flex-shrink: 0;
@@ -28,7 +28,7 @@
       display: inline;
       margin: 5px;
       a {
-        color: $white;
+        color: v.$white;
         text-decoration: none;
       }
     }
@@ -36,7 +36,7 @@
 }
 
 .terminal {
-  color: $white;
+  color: v.$white;
   text-decoration: none;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .hamb-line {
-  background: $white;
+  background: v.$white;
   display: block;
   height: 2px;
   position: relative;
@@ -57,7 +57,7 @@
 
 .hamb-line::before,
 .hamb-line::after {
-  background: $white;
+  background: v.$white;
   content: "";
   display: block;
   height: 100%;
@@ -98,7 +98,7 @@
     position: fixed;
     top: 60px;
     left: 0;
-    background-color: $backgroundDark;
+    background-color: v.$backgroundDark;
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.5s ease-out;

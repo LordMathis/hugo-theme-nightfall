@@ -1,17 +1,17 @@
-@import "./global";
+@use "global";
 
 // utils
-@import "./utils/variables";
-@import "./utils/fonts";
+@use "utils/variables";
+@use "utils/fonts";
 
 // components
-@import "./components/footer";
-@import "./components/header";
-@import "./components/post";
-@import "./components/social";
+@use "components/footer";
+@use "components/header";
+@use "components/post";
+@use "components/social";
 
 // pages
-@import "./pages/single";
-@import "./pages/list";
-@import "./pages/index";
-@import "./pages/baseof";
+@use "pages/single";
+@use "pages/list";
+@use "pages/index";
+@use "pages/baseof";

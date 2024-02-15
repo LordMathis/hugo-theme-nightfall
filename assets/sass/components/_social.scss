@@ -1,4 +1,4 @@
-@import "../utils/variables";
+@use "../utils/variables" as v;
 
 
 .socialNavbar {
@@ -10,8 +10,8 @@
     }
   }
   a {
-    color: $white;
-    text-shadow: $black 0px 0px 2px;
+    color: v.$white;
+    text-shadow: v.$black 0px 0px 2px;
     -webkit-font-smoothing: antialiased;
     display: inline-block;
     margin: 10px;
