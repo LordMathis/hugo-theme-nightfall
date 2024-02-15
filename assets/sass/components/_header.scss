@@ -35,7 +35,8 @@
   }
 }
 
-.terminal {
+.terminal,
+.terminal:hover {
   color: v.$white;
   text-decoration: none;
 }
