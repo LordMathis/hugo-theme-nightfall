@@ -77,7 +77,6 @@ color = "orange"
 
 Specify your own color with hex value or use one of the predefined colors (blue, orange, green or red). The default color is blue. Best contrast is provided by orange.
 
-
 ### Post metadata
 
 Post metadata such as tags, published date and reading time are rendered on post pages. You can turn off showing published date and reading time globally in `[params]` section of your config
