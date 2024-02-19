@@ -1,6 +1,8 @@
 # Nightfall
 
-Nightfall is a minimal dark theme for Hugo
+[![Netlify Status](https://api.netlify.com/api/v1/badges/27bf2d3e-412b-442b-b234-60dbac60e714/deploy-status)](https://app.netlify.com/sites/hugo-theme-nightfall/deploys)
+
+Nightfall is a minimal dark theme for Hugo. [Demo](https://hugo-theme-nightfall.netlify.app)
 
 ![Hugo Theme Nightfall](https://raw.githubusercontent.com/LordMathis/hugo-theme-nightfall/main/images/screenshot.png)
 ![Hugo Theme Nightfall Posts](https://raw.githubusercontent.com/LordMathis/hugo-theme-nightfall/main/images/screenshot_2.png)
