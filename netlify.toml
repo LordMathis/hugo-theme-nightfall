@@ -13,5 +13,5 @@
     rm dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz && \
     export PATH=/opt/build/repo/dart-sass:$PATH && \
     cd exampleSite && \
-    hugo --gc --minify --themesDir .. --theme $HUGO_THEME --baseURL $HUGO_BASEURL
+    hugo --gc --minify --themesDir ../.. --theme $HUGO_THEME --baseURL $HUGO_BASEURL
     """
