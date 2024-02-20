@@ -3,6 +3,7 @@ license = "MIT"
 licenselink = "https://github.com/LordMathis/hugo-theme-nightfall//blob/master/LICENSE"
 description = "Minimal dark theme for Hugo"
 homepage = "https://github.com/LordMathis/hugo-theme-nightfall/"
+demosite = "https://hugo-theme-nightfall.netlify.app/"
 tags = ["minimal", "dark", "blog", "sass", "multilingual"]
 features = ["blog", "sass", "dark", "multilingual"]
 min_version = "0.114.0"
