@@ -38,7 +38,7 @@ hostname = "gohugo.io"
 
   [params.author]
     name = "Mr Hugo"
-    email = "hugo@example.com
+    email = "hugo@example.com"
 ```
 ### Social links
 
