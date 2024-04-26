@@ -27,18 +27,23 @@ published = true  # Show published data on post page
 key = 0
 name = "github"
 url = "https://github.com/gohugoio"
+target = "_blank"
+aria = "GitHub Profile"
 
 [[params.social]]
 key = 1
 name = "twitter"
 url = "https://www.example.com"
+aria = "Twitter Profile"
 
 [[params.social]]
 key = 2
 name = "linkedin"
 url = "https://www.example.com"
+aria = "LinkedIn Profile"
 
 [[params.social]]
 key = 3
 name = "email"
 url = "mailto:email@example.com"
+aria = "My e-Mail Address"
