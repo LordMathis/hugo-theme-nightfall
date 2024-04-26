@@ -27,6 +27,7 @@ published = true  # Show published data on post page
 key = 0
 name = "github"
 url = "https://github.com/gohugoio"
+target = "_blank"
 
 [[params.social]]
 key = 1

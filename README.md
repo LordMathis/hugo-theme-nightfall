@@ -50,6 +50,7 @@ key = 0
 name = "github"
 url = "https://github.com/gohugoio"
 icon = "fa-brands fa-github"  # Add link to your icon font to `layouts/partials/custom-head.html`
+target = "_blank" # Defines your target option in a-href. _blank for a new Tab for example.
 
 [[params.social]]
 key = 1
