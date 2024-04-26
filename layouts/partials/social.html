@@ -3,11 +3,11 @@
         {{ range sort .Site.Params.social "key"}}
         <li>
             {{ if isset . "icon" }}
-                <a href="{{ .url | safeURL }}" {{ if .target }} target="{{ .target }}" {{ end }} aria-hidden="true" title="{{ .name }}" {{ if .rel }} rel="{{ .rel }}" {{ end }}>
+                <a href="{{ .url | safeURL }}" {{ if .target }} target="{{ .target }}" {{ end }} {{ if .aria }} aria-label="{{ .aria }}" {{ else }} aria-hidden="true" {{ end }} title="{{ .name }}" {{ if .rel }} rel="{{ .rel }}"{{ end }}>
                     <i class="{{ .icon }}"></i>
                 </a>
             {{ else }}
-                <a href="{{ .url | safeURL }}" {{ if .target }} target="{{ .target }}" {{ end }} {{ if .rel }} rel="{{ .rel }}" {{ end }}>{{ .name }}</a>
+                <a href="{{ .url | safeURL }}" {{ if .target }} target="{{ .target }}" {{ if .aria }} aria-label="{{ .aria }}" {{ else }} aria-hidden="true" {{ end }} {{ end }} {{ if .rel }} rel="{{ .rel }}"{{ end }}>{{ .name }}</a>
             {{ end }}
         </li>
         {{ end }}

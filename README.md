@@ -51,6 +51,7 @@ name = "github"
 url = "https://github.com/gohugoio"
 icon = "fa-brands fa-github"  # Add link to your icon font to `layouts/partials/custom-head.html`
 target = "_blank" # Defines your target option in a-href. _blank for a new Tab for example.
+aria = "GitHub Profile" # Define the aria label for accessibility like page reader - this is better for your SEO
 
 [[params.social]]
 key = 1
