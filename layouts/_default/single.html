@@ -8,7 +8,7 @@
     {{ if .Description}}
     	<p>{{.Description}}</p>
     {{ end }}
-    {{ if .Params.showMetadata | default true }}
+    {{ if .Params.showMetadata | default false }}
     <section class="postMetadata">
         <dl>
             {{ with .GetTerms "tags" }}
